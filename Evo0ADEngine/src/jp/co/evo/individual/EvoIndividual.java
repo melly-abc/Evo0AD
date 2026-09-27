@@ -2,8 +2,11 @@ package jp.co.evo.individual;
 
 import ga.framework.logic.core.individual.GeneBase;
 import ga.framework.logic.core.individual.IndividualBase;
+import jp.co.evo.individual.gene.EvoGene;
 
 public class EvoIndividual implements IndividualBase {
+
+	private GeneBase gene = new EvoGene();
 
 	@Override
 	public void calcFitness(double objectiveValue) {
@@ -19,8 +22,7 @@ public class EvoIndividual implements IndividualBase {
 
 	@Override
 	public GeneBase getGene() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.gene;
 	}
 
 	@Override
@@ -43,8 +45,7 @@ public class EvoIndividual implements IndividualBase {
 
 	@Override
 	public void setGene(GeneBase gene) {
-		// TODO Auto-generated method stub
-
+		this.gene = gene;
 	}
 
 	@Override
