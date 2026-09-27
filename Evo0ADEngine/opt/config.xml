@@ -1,0 +1,38 @@
+<Config>
+		<Genetic>		
+			<!-- 初期化フェーズ -->
+			<Logic type="Init">
+				<Class>ja.ga.sample.phase.InitSample</Class>
+			</Logic>
+			<!-- 選択（淘汰）フェーズ -->
+			<Logic type="Selection" incidence="1.0">
+				<Class>ja.ga.sample.phase.SelectionSample</Class>
+			</Logic>
+			<!-- 交叉フェーズ -->
+			<Logic type="CrossOver" incidence="0.8">
+				<Class>ja.ga.sample.phase.CrossOverSample</Class>
+			</Logic>
+			<!-- 突然変異フェーズ -->
+			<Logic type="Mutation" incidence="0.05">
+				<Class>ja.ga.sample.phase.MutationSample</Class>
+			</Logic>
+			<!-- 終了フェーズ -->
+            <Logic type="Finalize">
+                <Class>ja.ga.sample.phase.FinalizeSample</Class>
+            </Logic>
+			<!-- 個体情報 -->
+			<Individual num = "5">
+			    <Class>ja.ga.sample.individual.IndividualSample</Class>
+			</Individual>
+		</Genetic>
+		<System>
+		    <!-- メッセージ定義ファイル -->
+            <Message>
+                <File>opt/sample/messages.properties</File>
+            </Message>
+            <!-- ログ定義ファイル -->
+            <Log>
+                <File>opt/sample/logback.xml</File>
+            </Log>
+		</System>
+</Config>
