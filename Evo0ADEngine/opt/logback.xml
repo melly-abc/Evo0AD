@@ -4,7 +4,7 @@
     <appender name="FW_FILE"
               class="ch.qos.logback.core.FileAppender">
         <!-- ファイルの吐き出し先 -->
-        <file>log/sample/gafw.log</file>
+        <file>log/gafw.log</file>
 
         <encoder>
             <pattern>
@@ -17,7 +17,7 @@
     <appender name="APP_FILE"
               class="ch.qos.logback.core.FileAppender">
 
-        <file>log/sample/gafw_app.log</file>
+        <file>log/evo.log</file>
 
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
@@ -34,15 +34,15 @@
     
     <!-- FW側 -->
     <logger name="ga.framework"
-            level="INFO"
+            level="DEBUG"
             additivity="false">
         <appender-ref ref="FW_FILE"/>
         <appender-ref ref="CONSOLE"/>
     </logger>
     
     <!-- SAMPLEアプリ側 -->
-    <logger name="ja.ga.sample"
-            level="INFO"
+    <logger name="ja.co.evo"
+            level="DEBUG"
             additivity="false">
         <appender-ref ref="APP_FILE"/>
         <appender-ref ref="CONSOLE"/>
