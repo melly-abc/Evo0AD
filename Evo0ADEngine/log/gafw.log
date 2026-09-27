@@ -1,0 +1,45 @@
+2026-09-27 14:16:41.935 [main] DEBUG ga.framework.logic.RunGA - [START]-- RunGA.run --
+2026-09-27 14:16:41.938 [main] DEBUG ga.framework.logic.RunGA - 初期化処理を実行
+2026-09-27 14:16:41.939 [main] DEBUG ga.framework.logic.RunGA - フェーズに対応するクラスパスからインスタンスを生成
+2026-09-27 14:16:41.942 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.phase.InitPhase
+2026-09-27 14:16:41.943 [main] DEBUG ga.framework.logic.RunGA - ga.framework.logic.common.GaContext@5e4c8041
+2026-09-27 14:16:41.968 [main] DEBUG ga.framework.logic.RunGA - 個体群を生成
+2026-09-27 14:16:41.970 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.individual.EvoIndividual
+2026-09-27 14:16:41.972 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.individual.EvoIndividual
+2026-09-27 14:16:41.972 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.individual.EvoIndividual
+2026-09-27 14:16:41.973 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.individual.EvoIndividual
+2026-09-27 14:16:41.973 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.individual.EvoIndividual
+2026-09-27 14:16:41.974 [main] INFO  ga.framework.logic.RunGA - > RUNNING...
+2026-09-27 14:16:41.975 [main] DEBUG ga.framework.logic.RunGA - メインフェーズのインスタンスを生成
+2026-09-27 14:16:41.975 [main] DEBUG ga.framework.logic.RunGA - フェーズに対応するクラスパスからインスタンスを生成
+2026-09-27 14:16:41.976 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.phase.SelectionPhase
+2026-09-27 14:16:41.977 [main] DEBUG ga.framework.logic.RunGA - フェーズに対応するクラスパスからインスタンスを生成
+2026-09-27 14:16:41.979 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.phase.CrossOverPhase
+2026-09-27 14:16:41.979 [main] DEBUG ga.framework.logic.RunGA - フェーズに対応するクラスパスからインスタンスを生成
+2026-09-27 14:16:41.980 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.phase.MutationPhase
+2026-09-27 14:16:41.983 [main] ERROR ga.framework.main.GaMain - 業務エラーが発生しました。
+ga.framework.exception.GaBuisinessException: 指定されたクラスはGaPhaseを継承していません。：jp.co.evo.phase.MutationPhase
+	at ga.framework.logic.service.ReflectionService.buildInstanceFromClassPathString(ReflectionService.java:27)
+	at ga.framework.logic.RunGAService.buildPhaseLogicInstance(RunGAService.java:174)
+	at ga.framework.logic.RunGAService.executeMainProcess(RunGAService.java:131)
+	at ga.framework.logic.RunGA.run(RunGA.java:68)
+	at ga.framework.main.GaMain.main(GaMain.java:72)
+2026-09-27 14:18:06.559 [main] DEBUG ga.framework.logic.RunGA - [START]-- RunGA.run --
+2026-09-27 14:18:06.562 [main] DEBUG ga.framework.logic.RunGA - 初期化処理を実行
+2026-09-27 14:18:06.562 [main] DEBUG ga.framework.logic.RunGA - フェーズに対応するクラスパスからインスタンスを生成
+2026-09-27 14:18:06.564 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.phase.InitPhase
+2026-09-27 14:18:06.566 [main] DEBUG ga.framework.logic.RunGA - ga.framework.logic.common.GaContext@5e4c8041
+2026-09-27 14:18:06.584 [main] DEBUG ga.framework.logic.RunGA - 個体群を生成
+2026-09-27 14:18:06.586 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.individual.EvoIndividual
+2026-09-27 14:18:06.587 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.individual.EvoIndividual
+2026-09-27 14:18:06.588 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.individual.EvoIndividual
+2026-09-27 14:18:06.588 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.individual.EvoIndividual
+2026-09-27 14:18:06.588 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.individual.EvoIndividual
+2026-09-27 14:18:06.589 [main] INFO  ga.framework.logic.RunGA - > RUNNING...
+2026-09-27 14:18:06.590 [main] DEBUG ga.framework.logic.RunGA - メインフェーズのインスタンスを生成
+2026-09-27 14:18:06.590 [main] DEBUG ga.framework.logic.RunGA - フェーズに対応するクラスパスからインスタンスを生成
+2026-09-27 14:18:06.591 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.phase.SelectionPhase
+2026-09-27 14:18:06.592 [main] DEBUG ga.framework.logic.RunGA - フェーズに対応するクラスパスからインスタンスを生成
+2026-09-27 14:18:06.593 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.phase.CrossOverPhase
+2026-09-27 14:18:06.594 [main] DEBUG ga.framework.logic.RunGA - フェーズに対応するクラスパスからインスタンスを生成
+2026-09-27 14:18:06.595 [main] DEBUG ga.framework.logic.RunGA - ClassPath：jp.co.evo.phase.MutationPhase
