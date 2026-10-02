@@ -41,7 +41,7 @@
     </logger>
     
     <!-- SAMPLEアプリ側 -->
-    <logger name="ja.co.evo"
+    <logger name="jp.co.evo"
             level="DEBUG"
             additivity="false">
         <appender-ref ref="APP_FILE"/>
