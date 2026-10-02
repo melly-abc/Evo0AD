@@ -4,26 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 import ga.framework.logic.common.GaContext;
-import ga.framework.logic.core.individual.GeneBase;
+import ga.framework.logic.core.individual.GaGene;
 
-public class EvoGene implements GeneBase {
+public class EvoGene implements GaGene {
 
 	private List<Integer> gene = new ArrayList<>();
-	
+
 	@Override
 	public Object getGeneValue() {
-		return gene;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	public void initGene(GaContext context) {
 		// TODO Auto-generated method stub
+		
 	}
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public void setGeneValue(Object value) {
-		this.gene = (List<Integer>) value;
+		// TODO Auto-generated method stub
+		
 	}
+	
 
 }

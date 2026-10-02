@@ -22,7 +22,10 @@ public class InitPhase implements GaPhase {
 	@Override
 	public void execute(GaContext context) {
 		try {
-			new ProcessBuilder("0ad").start();
+			new ProcessBuilder(
+				    "0ad",
+				    "--rl-interface=127.0.0.1:6000"
+				).start();
 		} catch (IOException e) {
 			throw new GaSystemException("エラーが発生");
 		}
