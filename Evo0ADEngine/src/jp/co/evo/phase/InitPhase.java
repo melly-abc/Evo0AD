@@ -5,6 +5,7 @@ import java.io.IOException;
 import ga.framework.exception.GaSystemException;
 import ga.framework.logic.common.GaContext;
 import ga.framework.logic.core.phase.GaPhase;
+import jp.co.evo.common.CommonStrings;
 /**
  * 初期化フェーズ
  * <p>
@@ -24,7 +25,7 @@ public class InitPhase implements GaPhase {
 		try {
 			new ProcessBuilder(
 				    "0ad",
-				    "--rl-interface=127.0.0.1:6000"
+				    "--rl-interface="+CommonStrings.ip+":"+CommonStrings.port
 				).start();
 		} catch (IOException e) {
 			throw new GaSystemException("エラーが発生");
