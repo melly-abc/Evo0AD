@@ -23,6 +23,9 @@
 			<!-- 個体情報 -->
 			<Individual num = "5">
 			    <Class>jp.co.evo.individual.EvoIndividual</Class>
+			    <Gene>
+			    <Class>jp.co.evo.individual.gene.EvoGene</Class>
+			    </Gene>
 			</Individual>
 		</Genetic>
 		<System>
