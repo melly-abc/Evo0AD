@@ -25,7 +25,7 @@ public class InitPhase implements GaPhase {
 		try {
 			new ProcessBuilder(
 				    "0ad",
-				    "--rl-interface="+CommonStrings.ip+":"+CommonStrings.port
+				    "--rl-interface="+CommonStrings.IP+":"+CommonStrings.PORT
 				).start();
 		} catch (IOException e) {
 			throw new GaSystemException("エラーが発生");
