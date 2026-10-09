@@ -11,6 +11,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Arrays;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import ga.framework.exception.GaBuisinessException;
 import ga.framework.exception.GaSystemException;
 import ga.framework.logic.common.GaContext;
@@ -19,6 +22,7 @@ import ga.service.log.LogLevel;
 import ga.service.log.LogService;
 import jp.co.evo.common.CommonStrings;
 import jp.co.evo.common.HttpService;
+import jp.co.evo.common.JsonService;
 
 /**
  * 初期化フェーズ
@@ -79,7 +83,9 @@ public class InitPhase implements GaPhase {
 			log.print(LogLevel.DEBUG, "step実行");
 			HttpResponse<String> response = http.sendPost("step", "{" + playerId + ":{}}");
 			log.print(LogLevel.DEBUG, "Response:\n" + response.body());
-
+			JsonService jsonService = JsonService.factory();
+			jsonService.read(response.body());
+			
 		} catch (IOException e) {
 			throw new GaSystemException("エラーが発生", e);
 		} catch (InterruptedException e) {
